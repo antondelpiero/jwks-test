@@ -1,0 +1,19 @@
+micronaut:
+    server:
+        port: 8091
+    application:
+        name: client
+    security:
+        enabled: true
+        endpoints:
+            login:
+                enabled: false
+            oauth:
+                enabled: false
+        token:
+            jwt:
+                enabled: true
+                signatures:
+                    jwks:
+                      anton:
+                          url: "http://localhost:8092/keys"

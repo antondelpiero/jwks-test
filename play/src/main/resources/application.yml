@@ -1,0 +1,17 @@
+micronaut:
+    server:
+        port: 8092
+    application:
+        name: play
+    security:
+        enabled: true
+        endpoints:
+            login:
+                enabled: true
+            oauth:
+                enabled: true
+            keys:
+                enabled: true
+        token:
+            jwt:
+                enabled: true
